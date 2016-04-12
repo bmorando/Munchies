@@ -24,6 +24,14 @@ ActiveRecord::Schema.define(version: 20160411175005) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "comments", force: :cascade do |t|
+    t.text     "content"
+    t.integer  "user_id"
+    t.integer  "jam_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "jams", force: :cascade do |t|
     t.string   "description"
     t.string   "location"

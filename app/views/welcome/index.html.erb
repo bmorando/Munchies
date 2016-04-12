@@ -1,0 +1,16 @@
+<h1>Welcome</h1>
+
+
+<ul>
+    <% @posts.each do |f| %>
+        <li>
+            <strong> <%= f.text %> </strong>
+        </li>
+    <% end %>
+</ul>
+
+
+<%= link_to "add post", new_post_path %>
+<%= link_to "Login", new_session_path %>
+<%= link_to "Sign Up", new_user_path %>
+

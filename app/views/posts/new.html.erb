@@ -1,0 +1,13 @@
+<h1>Posts</h1>
+
+<%= form_for @post do |f| %>
+
+    <div>
+        <%= f.label :content %>
+        <%= f.text_field :content %>
+    </div>
+
+    <%= f.submit  "Post" %>
+
+
+<% end %>

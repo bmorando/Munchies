@@ -23,7 +23,7 @@ class PostsController < ApplicationController
   end
 
   def edit
-    @post = post.find(params[:id])
+    post = post.find(params[:id])
   end
 
   def destroy
