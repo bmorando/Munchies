@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :authorize, except: [:index, :show]
+  # before_action :only_my_post, only: [:edit, :update, :destroy]
+
   def index
   @posts = Post.all
   end
@@ -44,6 +48,14 @@ class PostsController < ApplicationController
   private
   def post_params
     params.require(:post).permit(:name, :content)
+  end
+
+  def set_post
+      @post = Post.find(params[:id])
+  end
+
+  def only_my_post
+    redirect_to posts_path, notice: "Not authorized!" if (current_user != @post.user)
   end
 
 end

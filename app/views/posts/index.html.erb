@@ -3,10 +3,12 @@
 <ul>
     <% @posts.each do |post| %>
         <li>
-            <strong> <%= post.name %> </strong> - <%= post.content %>
+            <strong> <%= post.name %> </strong> - <%= post.content %><br>
             <%= link_to "More info", post_path(post) %>
-
         </li>
+        <br>
+
+        <%= link_to "Add new post!", new_post_path(post) %>
     <% end %>
 </ul>
 
