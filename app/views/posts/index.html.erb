@@ -1,1 +1,15 @@
+<h1>Today's POST</h1>
+
+<ul>
+    <% @posts.each do |post| %>
+        <li>
+            <strong> <%= post.name %> </strong> - <%= post.content %>
+            <%= link_to "More info", post_path(post) %>
+
+        </li>
+    <% end %>
+</ul>
+
+
+
 
