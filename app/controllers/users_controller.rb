@@ -1,18 +1,17 @@
 class UsersController < ApplicationController
+  def new
+    @user = User.new
+  end
 
   def create
     user = User.new(user_params)
     if user.save
         flash[:success] = 'You are registered!'
-        redirect_to user_path user.id
+        redirect_to root_path user.id
     else
         flash[:error] = 'Registration has failed!'
-        redirect_to new_user_path
+        redirect_to :posts
     end
-  end
-
-  def new
-    @user = User.new
   end
 
   def update

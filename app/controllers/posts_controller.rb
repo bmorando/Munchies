@@ -54,9 +54,9 @@ class PostsController < ApplicationController
       @post = Post.find(params[:id])
   end
 
-  def only_my_post
-    redirect_to posts_path, notice: "Not authorized!" if (current_user != @post.user)
-  end
+  # def only_my_post
+  #   redirect_to posts_path, notice: "Not authorized!" if (current_user != @post.user)
+  # end
 
 end
 
