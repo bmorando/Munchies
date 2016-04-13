@@ -3,7 +3,11 @@
 <ul>
     <% @posts.each do |post| %>
         <li>
-            <strong> <%= post.name %> </strong> - <%= post.content %><br>
+            <strong> <%= post.name %> </strong> - <%= post.content %>
+            <% if post.image.present? %>
+            <%= image_tag post.image.url(:medium) %>
+            <% end %>
+            <br>
             <%= link_to "More info", post_path(post) %>
         </li>
         <br>
