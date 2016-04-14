@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :authorize, except: [:index, :show]
-  before_action :only_my_post, only: [:edit, :update, :destroy]
+  before_action :only_my_post, only: [:edit, :update]
 
   def index
   @posts = Post.all
@@ -47,7 +47,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:name, :content, :image)
+    params.require(:post).permit(:name, :content, :image, :category_id)
   end
 
   def set_post
@@ -57,6 +57,7 @@ class PostsController < ApplicationController
   def only_my_post
     redirect_to root_path, notice: "Not authorized!" if (current_user != @post.user)
   end
+
 
 end
 
