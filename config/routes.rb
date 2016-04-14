@@ -15,6 +15,10 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :create]
   resources :posts
   resources :sessions, only: [:new, :create, :destroy]
+  resources :category
+  resources :category_breakfast
+  resources :category_dinner
+  resources :category_dessert
   # resources :category, only: [:show, :index]
 
   # The priority is based upon order of creation: first created -> highest priority.

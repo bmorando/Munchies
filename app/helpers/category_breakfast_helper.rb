@@ -1,0 +1,2 @@
+module CategoryBreakfastHelper
+end

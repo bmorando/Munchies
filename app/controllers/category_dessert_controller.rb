@@ -1,0 +1,2 @@
+class CategoryDessertController < ApplicationController
+end
