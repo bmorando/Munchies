@@ -10,13 +10,7 @@
   <p> <%= @post.content %> </p>
   <div class="field">
 
-  <%= form_for Post.new do |f| %>
-      <%= hidden_field :user_id, :value => current_user.id if current_user %>
-      <%= f.text_area :content %>
-      <%= f.submit "Submit" %>
-
-
-      <% end %>
+   <%= render :partial => "comments/form" %>
   <%= link_to "Edit", edit_post_path(@post) %>
   </div>
-
+just show froom posts voiew

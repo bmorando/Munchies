@@ -6,14 +6,14 @@ Rails.application.routes.draw do
   get "/login", to: "sessions#new"
 
 
-
+  resources :posts do resources :comments end
 
 
 
   # resources :posts, only: [:new, :create, :destroy]
   # resources :users, except: [:index, :destroy]
   resources :users, only: [:new, :create]
-  resources :posts
+  # resources :posts
   resources :sessions, only: [:new, :create, :destroy]
   resources :category
   resources :category_breakfast
