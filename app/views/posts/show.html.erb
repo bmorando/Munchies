@@ -10,7 +10,13 @@
   <p> <%= @post.content %> </p>
   <div class="field">
 
-   <%= render :partial => "comments/form" %>
+  <% @post.comments.each do |comment| %>
+
+    <%= comment.content %>
+
+  <% end %>
+  <%= render :partial => "comments/form" %>
   <%= link_to "Edit", edit_post_path(@post) %>
   </div>
-just show froom posts voiew
+
+

@@ -15,8 +15,8 @@ class CommentsController < ApplicationController
 
   def create
     # puts params
-    user_id = session[:user_id]
-    @comment = User.find(user_id).posts.find(:post_id).comments.create(comment_params)
+    # user_id = session[:user_id]
+    @comment = Comment.create(comment_params)
     if @comment.save
       redirect_to :posts
     else
@@ -44,7 +44,7 @@ class CommentsController < ApplicationController
   end
 
   def comment_params
-    permit.require(:comment).permit(:content, :user_id, :post_id)
+    params.require(:comment).permit(:content, :user_id, :post_id)
   end
 end
 

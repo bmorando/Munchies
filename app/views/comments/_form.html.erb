@@ -2,10 +2,11 @@
 
 <%= form_for [@post, @post.comments.build] do |f| %>
 
-<%= hidden_field :user_id, :value => current_user.id if current_user %>
-<%= hidden_field :post_id, :value => @post.id  %>
+<%= f.hidden_field :user_id, :value => current_user.id if current_user %>
+<%= f.hidden_field :post_id, :value => @post.id  %>
       <%= f.text_area :content %>
       <%= f.submit "Submit" %>
 
+
 <% end %>
-<%= (Post.find(params[:post_id])).user_id %>
+

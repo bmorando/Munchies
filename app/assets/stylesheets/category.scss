@@ -1,7 +1,8 @@
 
 .imgContainer{
-    float: inherit;
-    display: table-caption;
+  border: 2px solid green;
+    display: inline-block;
+    width: 50%;
 }
 // Place all the styles related to the category controller here.
 // They will automatically be included in application.css.
