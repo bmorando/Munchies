@@ -1,22 +1,26 @@
-<h1>Edit this post!</h1>
+<h1>Edit Recipe</h1>
+<br>
 
+<div class="field">
 <%= form_for @post do |f| %>
 
     <div>
         <%= f.label :name %>
         <%= f.text_field :name %>
-    </div><br>
+    </div>
 
     <div>
         <%= f.label :content %>
-        <%= f.text_field :content %>
+        <%= f.text_field :content  %>
+        <%= f.file_field :image %>
     </div>
+<br>
 
 
-
-    <%= f.submit "Submit these changes!" %>
+    <%= f.submit "Submit these changes" %>
 
 <% end %>
+</div>
 
-<%= link_to "Back to the list!", posts_path %>
+
 
