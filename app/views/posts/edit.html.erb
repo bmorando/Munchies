@@ -1,4 +1,6 @@
-    <h1>Edit Recipe</h1>
+<div class="showcontainer">
+
+    <h1 class="showlogo large">Edit Recipe</h1>
     <br>
 
     <div class="field">
@@ -14,14 +16,16 @@
             <%= f.text_field :content  %>
             <%= f.file_field :image %>
         </div>
-    <br>
 
 
+        <%= link_to "Back to recipes", posts_path %>
+        |
         <%= link_to "Delete", post_path, method: :delete, data: { confirm: "Are you sure you want to delete this post?"} %> <br>
         <%= f.submit "Submit these changes" %>
 
     <% end %>
     </div>
+</div>
 
 
 

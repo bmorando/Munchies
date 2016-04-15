@@ -1,3 +1,47 @@
+
+.welcomecontainer{
+  margin: 0 auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  z-index: 5;
+  margin-top: 154px;
+  display: block;
+  background-image: url(http://i.imgur.com/KEzdt2k.jpg?3);
+  opacity: 1.5;
+  height: 347px;
+
+
+  // border: 3px dashed white;
+}
+.logo-word.large{
+    float: none;
+    color: rgba(244, 67, 54, 0.75);
+    font-size: 84px;
+    padding-top: 61px;
+
+}
+.logo-word{
+    overflow: hidden;
+    margin: auto;
+    width: 330px;
+    height: 165px;
+    padding: 0;
+}
+
+.field{
+  left: 50%;
+  top: 50%;
+  margin-left: -151px;
+  width: 300px;
+  position: relative;
+  padding: 10px;
+  color: black;
+}
+
+
+
+
+
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/

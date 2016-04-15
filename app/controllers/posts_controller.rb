@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :authorize, except: [:index, :show]
-  before_action :only_my_post, only: [:edit, :update]
+  # before_action :only_my_post, only: [:edit, :update]
 
   def index
   @posts = Post.all
@@ -41,7 +41,7 @@ class PostsController < ApplicationController
 
   def destroy
   @post = Post.find(params[:id])
-  @post.destroy
+  # @post.destroy
   redirect_to posts_path
   end
 

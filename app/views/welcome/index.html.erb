@@ -1,23 +1,21 @@
-<h1><em>Num Nom</em></h1>
-<br>
-<ul>
-    <% @posts.each do |post| %>
-    <li>
-        <strong> <%= post.name %> </strong>
-        <br>
-        <% if post.image.present? %>
-        <%= image_tag post.image.url(:medium) %>
-    </li>
-    <br>
+<div class="welcomecontainer">
+
+    <h1 class="logo-word large" id="logo">Munchies </h1>
+    <p id="alert"><%= alert %></p>
+    <%= form_tag sessions_path do %>
+      <div class="field">
+        <%= label_tag :email %>
+        <%= text_field_tag :email, params[:email] %>
+      </div>
+      <div class="field">
+        <%= label_tag :password %>
+        <%= password_field_tag :password %>
+      <%= submit_tag "Log in" %>
+      </div>
     <% end %>
-    <br>
-    <%= link_to "Recipe", post_path(post) %>
-    <br>
-    <%= link_to "Add Comment", post_path(post) %>
+</div>
 
 
-    <% end %>
-</ul>
 
 
 

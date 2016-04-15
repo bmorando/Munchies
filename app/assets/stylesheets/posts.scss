@@ -1,22 +1,82 @@
-h1,h2{
-  margin: 0px 0px 0px 498px;
+
+
+.recipecontainer{
+  margin: 0 auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  z-index: 5;
+  margin-top: 154px;
+  display: block;
+  // background-image: url(http://i.imgur.com/3sqY758.jpg?2);
+  opacity: 1.5;
+  height: 347px;
+  background-color: snow;
+
+
+  // border: 3px dashed white;
+}
+.recipelogo.large{
+    float: none;
+    color: rgba(244, 67, 54, 0.75);
+    font-size: 64px;
+    padding-top: 61px;
+
+}
+.recipelogo{
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    height: 165px;
+    padding: 0;
 }
 
-ul{
-  margin: 0px 0px 0px 495px;
-}
-p{
-  margin: 0px 0px 0px 495px;
-
-}
 .field{
-  margin: 0px 0px 0px 495px;
+  left: 50%;
+  top: 50%;
+  margin-left: -151px;
+  width: 300px;
+  position: relative;
+  padding: 10px;
+  color: black;
+}
+#Z{
+    width: 720px;
+    margin: 30px 0 0 0;
+    padding: 0 0 120px 0;
+    float: left;
+}
+.X iframe{
+    width: 220px;
+    overflow: hidden;
+    word-wrap: normal;
+    /* position: relative; */
+    float: left;
+    margin: 0 10px 20px 10px;
+}
+
+.showcontainer{
+  margin: 0 auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  z-index: 5;
+  margin-top: 154px;
+  display: block;
+  opacity: 1.5;
+
+}
+.showlogo{
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    padding: 0;
+}
+
+.showlogo.large{
+    float: none;
+    color: rgba(244, 67, 54, 0.75);
+    font-size: 64px;
 
 }
 
-.commentbox{
-  background-color: grey;
-}
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+

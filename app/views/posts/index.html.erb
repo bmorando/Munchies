@@ -1,9 +1,11 @@
-<h1 class="title">Today's POST</h1>
+<div id="Z" class="masonry" style="position: relative; height: 1213px; opacity: 1;">
+
+<div class="X" style="position: absolute; top: 0px; left: 0px;">
 
 
-<ul>
+    <ul>
     <% @posts.each do |post| %>
-        <li>
+
             <strong> <%= post.name %> </strong>
             <%= post.category_id %>
             <br>
@@ -15,13 +17,27 @@
             <%= link_to "Recipe", post_path(post) %>
             <br>
             <%= link_to "Add Comment", post_path(post) %>
-
-
-        </li>
           <br>
-
     <% end %>
-</ul>
+    </ul>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

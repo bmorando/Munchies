@@ -1,6 +1,7 @@
-<h1>Create an account</h1>
-<br>
 
+<div class="logincontainer">
+
+<h1 class="logo-word large">Create an account</h1>
 <%= form_for @user do |f| %>
   <% if @user.errors.any? %>
     <div class="error_messages">
@@ -27,7 +28,8 @@
   <div class="field">
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation %>
-  </div>
   <div class="actions"><%= f.submit %></div>
+  </div>
 <% end %>
+</div>
 

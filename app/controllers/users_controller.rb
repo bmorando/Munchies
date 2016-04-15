@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     user = User.new(user_params)
     if user.save
         flash[:success] = 'You are registered!'
-        redirect_to root_path user.id
+        redirect_to post_path user.id
     else
         flash[:error] = 'Registration has failed!'
         redirect_to :posts

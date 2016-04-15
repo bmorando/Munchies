@@ -1090,7 +1090,7 @@ body {
   font-size: 15px;
   line-height: 1.42857143;
   color: #777777;
-  background-color: #ffffff;
+  background-color: rgba(244, 67, 54, 0.1);
 }
 input,
 button,
@@ -4281,7 +4281,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   padding: 19.5px 15px;
-  font-size: 19px;
+  font-size: 63px;
   line-height: 21px;
   height: 60px;
 }
