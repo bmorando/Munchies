@@ -10,13 +10,16 @@
   <p> <%= @post.content %> </p>
   <div class="field">
 
-  <% @post.comments.each do |comment| %>
-
-    <%= comment.content %>
-
-  <% end %>
+  <div class="commentbox">
+    <% @post.comments.each do |comment| %>
+      <li><%= comment.content %></li>
+    <% end %>
+  </div>
   <%= render :partial => "comments/form" %>
   <%= link_to "Edit", edit_post_path(@post) %>
   </div>
+
+
+
 
 
