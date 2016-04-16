@@ -3,7 +3,8 @@
 
 This app consist of sharing crazy good recipes with people around the world! Homemade recipes that your
 great grandma used to make. You start by creating an account with Munchies! Which leads you to our Munchies feed
-you can comment on these recipes, let people now they should post more of their awesome food.
+you can comment on these recipes, let people now they should post more of their awesome food. Go ahead and add your own recipes
+share your best dishes!!
 
 
 Ruby on Rails, HTML, CSS, Bootstrap, Javascript
