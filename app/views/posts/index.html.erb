@@ -7,7 +7,7 @@
     <% @posts.each do |post| %>
 
             <strong> <%= post.name %> </strong>
-            <%= post.category_id %>
+
             <br>
             <% if post.image.present? %>
               <%= image_tag post.image.url(:medium) %>

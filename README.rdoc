@@ -4,9 +4,14 @@ This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
+This app consist of sharing crazy good recipes with people around the world! Homemade recipes that your
+great grandma used to make. You start by creating an account with Munchies! Which leads you to our Munchies feed
+you can comment on these recipes, let people now they should post more of their awesome food.
 
-* Ruby version
-
+*Used ruby "2.2.3" version .
+ My Realationships:
+ Comments belongs to user
+ as they belong with posts.
 * System dependencies
 
 * Configuration
